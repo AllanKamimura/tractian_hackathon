@@ -31,5 +31,5 @@
 ### How to run
 
 ```
-GALEAO_TOKEN=$GALEAO_TOKEN GOOGLE_API_KEY=$GOOGLE_API_KEY python3 src/telegram_bot.py
+TELEGRAM_TOKEN=$TELEGRAM_TOKEN GOOGLE_API_KEY=$GOOGLE_API_KEY python3 src/telegram_bot.py
 ```

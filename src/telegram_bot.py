@@ -12,7 +12,7 @@ from llm import GeminiBot
 
 import os
 
-TOKEN = os.getenv("TELEGRAM_GALEAO")
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 user_dict={}
 
 gemini_bot = GeminiBot(sheets_path = "delivery/planilhasap.xlsx")
@@ -52,7 +52,7 @@ async def on_message(update: Update, context: CallbackContext) -> None:
         
         user_dict[user_id] = f"user: {message_text}\n\nassistant:{bot_answer}"
 
-application = Application.builder().token(TOKEN).build()
+application = Application.builder().token(TELEGRAM_TOKEN).build()
 application.add_handler(CommandHandler('start', start))
 application.add_handler(MessageHandler(filters.ALL, on_message))
 print("ok")
