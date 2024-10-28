@@ -27,3 +27,9 @@
 ### Summary Flow:
 
 1. Telegram Audio Message → 2. Speech-to-Text Transcription → 3. RAG LLM → 4. Generate Checklist → 5. Send Checklist to User
+
+### How to run
+
+```
+GALEAO_TOKEN=$GALEAO_TOKEN GOOGLE_API_KEY=$GOOGLE_API_KEY python3 src/telegram_bot.py
+```
